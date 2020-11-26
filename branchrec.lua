@@ -332,8 +332,9 @@ function forward()
 			x = x - 1
 		end
 	else
+		turtle.digUp()
 		up()
-		forward()
+		bore(1)
 	end
 end
 
