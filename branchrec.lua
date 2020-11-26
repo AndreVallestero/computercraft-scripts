@@ -321,38 +321,46 @@ end
 
 function forward()
 	go_home_if_need()
-	turtle.forward()
-	if azmth == NORTH then
-		z = z + 1
-	elseif azmth == EAST then
-		x = x + 1
-	elseif azmth == SOUTH then
-		z = z - 1
-	elseif azmth == WEST then
-		x = x - 1
+	if turtle.forward() then
+		if azmth == NORTH then
+			z = z + 1
+		elseif azmth == EAST then
+			x = x + 1
+		elseif azmth == SOUTH then
+			z = z - 1
+		elseif azmth == WEST then
+			x = x - 1
+		end
+	else
+		up()
+		forward()
 	end
 end
 
 function up()
 	go_home_if_need()
-	turtle.up()
-	y = y + 1
+	if turtle.up() then
+		y = y + 1
+	end
 end
 
 function down()
 	go_home_if_need()
-	turtle.down()
-	y = y - 1
+	if turtle.down() then
+		y = y - 1
+	end
 end
 
 function turn_right()
-	turtle.turnRight()
-	azmth = (azmth + 1) % 4
+	if turtle.turnRight() then
+		azmth = (azmth + 1) % 4
+	end
 end
 
 function turn_left()
-	turtle.turnLeft()
-	azmth = (azmth - 1) % 4
+	if turtle.turnLeft() then
+		azmth = (azmth - 1) % 4
+	end
 end
 
 function go_home_if_need()
