@@ -10,3 +10,4 @@ A collection of high quality scripts for ComputerCraft
 - When entering y coord, stand at the same foot level as turtle and use y value from f3 menu
 - Stay in the same chunks as the turtle or else it might get lost
 - Recommended to only put one block of coal each run to limit range
+- For best efficiency place turtle at y 14 and space holes 16 to 32 blocks away.
