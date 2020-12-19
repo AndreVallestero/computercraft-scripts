@@ -19,7 +19,6 @@ print("(cobble, andesite, diorite, granite)")
 print("To guarantee space for an item, place one of it in the bottom 3 rows")
 turtle.select(1) -- Reset slot selection
 
-
 HOME_X = 0
 print("What is my Y coord?")
 HOME_Y = read()
