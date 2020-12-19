@@ -13,6 +13,7 @@ DIM_X = 0
 DIM_Y = 1
 DIM_Z = 2
 
+print("For best efficiency place turtle at y 14 and space holes 16 to 32 blocks away")
 print("Make sure the top 4 slots are have a block of filter material!")
 print("(cobble, andesite, diorite, granite)")
 
