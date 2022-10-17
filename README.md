@@ -11,3 +11,17 @@ A collection of high quality scripts for ComputerCraft
 - Stay in the same chunks as the turtle or else it might get lost
 - Recommended to only put one block of coal each run to limit range
 - For best efficiency place turtle at y 14 and space holes 16 to 32 blocks away.
+
+### branchrec2
+- TODO: make a new script that doesn't look left or right unless it finds an ore
+  - when doing general search, it should go in a archimedes spiral search pattern up to a certain distance, only ever checking the blocks above, infront, and below, leaving once space between the spiral layers. Once it reaches the edge of the box, it should go one layer down and go directly underneath the walls of the previous level, going back to the center. This will allow it to check the old walls by checking the block above each time it moves. This is the optimal search pattern 
+  - example pattern: ```
+XXXXXX
+X   
+X XXXX
+X X  X
+X XX X
+X    X
+XXXXXX
+```
+- TODO: auto drop off and refuel
