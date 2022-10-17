@@ -18,7 +18,7 @@ A collection of high quality scripts for ComputerCraft
   - example pattern: 
   ```
   Layer 1
-  XXXXXX
+  XXXXXXX
   X   
   X XXXX
   X X  X
@@ -28,12 +28,12 @@ A collection of high quality scripts for ComputerCraft
 
   Layer 2
    
-   XXXXX   
-   X
-   X  XX
-   X   X
-   XXXXX
-
+   XXXXXX   
+   X    X
+   X XX X
+   X  X X
+   XXXX X
+        X
   ```
   - TODO: maybe skip every other layer, and have 3 spaces between the spiral layers, that way we can catch the edges of veins which is technically more efficient.
 - TODO: auto drop off and refuel
