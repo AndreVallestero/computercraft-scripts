@@ -16,7 +16,7 @@ A collection of high quality scripts for ComputerCraft
 - TODO: make a new script that doesn't look left or right unless it finds an ore
   - when doing general search, it should go in a archimedes spiral search pattern up to a certain distance, only ever checking the blocks above, infront, and below, leaving once space between the spiral layers. Once it reaches the edge of the box, it should go one layer down and go directly underneath the walls of the previous level, going back to the center. This will allow it to check the old walls by checking the block above each time it moves. This is the optimal search pattern 
   - example pattern: 
-   ```
+  ```
 XXXXXX
 X   
 X XXXX
