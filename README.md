@@ -14,9 +14,10 @@ A collection of high quality scripts for ComputerCraft
 
 ### branchrec2
 - TODO: make a new script that doesn't look left or right unless it finds an ore
-  - when doing general search, it should go in a archimedes spiral search pattern up to a certain distance, only ever checking the blocks above, infront, and below, leaving once space between the spiral layers. Once it reaches the edge of the box, it should go one layer down and go directly underneath the walls of the previous level, going back to the center. This will allow it to check the old walls by checking the block above each time it moves. This is the optimal search pattern 
+  - when doing general search, it should go in a archimedes spiral search pattern up to a certain distance, only ever checking the blocks above, infront, and below, leaving once space between the spiral layers. Once it reaches the edge of the box, it should go one layer down and go directly underneath the walls of the previous level, going back to the center. This will allow it to check the old walls by checking the block above each time it moves. This is the optimal search pattern as it reduces turning while still checking every block
   - example pattern: 
   ```
+  Layer 1
   XXXXXX
   X   
   X XXXX
@@ -24,5 +25,15 @@ A collection of high quality scripts for ComputerCraft
   X XX X
   X    X
   XXXXXX
+
+  Layer 2
+   
+   XXXXX   
+   X
+   X  XX
+   X   X
+   XXXXX
+
   ```
+  - TODO: maybe don't check every block, and skip every other layer that way we can catch between the vein which is technically more efficient.
 - TODO: auto drop off and refuel
