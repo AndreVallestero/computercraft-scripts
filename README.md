@@ -35,5 +35,5 @@ A collection of high quality scripts for ComputerCraft
    XXXXX
 
   ```
-  - TODO: maybe don't check every block, and skip every other layer that way we can catch between the vein which is technically more efficient.
+  - TODO: maybe skip every other layer, and have 3 spaces between the spiral layers, that way we can catch the edges of veins which is technically more efficient.
 - TODO: auto drop off and refuel
